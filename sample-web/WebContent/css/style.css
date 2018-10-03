@@ -1,0 +1,499 @@
+@CHARSET "UTF-8";
+body,html{
+	margin:0;/* 余白の削除*/
+	padding:0;/* 余白の削除*/
+	width:100%;
+	height:100%;
+}
+
+#header{
+	position:fixed;
+	float:left;
+	width:100%;
+	height:60px;
+	padding:10px;
+	background-color:#005392;
+}
+
+#header-menu{
+	float:left;
+	width:80%;
+	margin-left:-30px;
+}
+
+#header-menu ul{
+	float:left;
+	margin-top:15px;
+	margin-left:20px;
+	width:100%;
+}
+
+#header-menu ul li{
+	float:left;
+	list-style:none;
+	padding-left:1%;
+	color:white;
+	font-size:12px;
+}
+
+#header-title{
+	float:left;
+	height:30px;
+	margin-top:17px;
+	margin-left:25px;
+	width:10%;
+	font-family:'Vidaloka',serif;
+	color:#ffffff;
+	font-size:17px;
+}
+
+.submit_btn_box{
+	width:45%;
+	display:block;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:3%;
+	padding-left:42%;
+	float:left;
+	}
+
+.submit_btn{
+	padding:0.5em 1em;
+	text-decoration:none;
+	border-radius:100px;
+	width:100px;
+	 height:35px;
+	 margin-top:-5px;
+	 margin-left:6px;
+	font-size:10px;
+	text-align:center;
+	color:#fff;
+	box-shadow:2px 2px #1a6ea0;
+	background:#4b7ea1;
+	background:-webkit-gradient(linear,left top,left bottom,from(#81a8cb),to(#4477a1));
+	background:-moz-linear-gradient(-90deg,#81a8cb,#4477a1);
+	filter:progid:DXImageTransform.Microsoft.gradient(Gradient Type=0.startColorstr='#81a8cb',endColorstr='#4477a1');
+}
+
+.submit_btn:hover{
+	color:#fff;
+	background-color:#49a9d4;
+	box-shadow:2px 2px #1a6ea0;
+	cursor:pointer;
+	opacity:0.5;
+	background:#81a8cb;
+	background:-webkit-gradient(linear,left top,left bottom, from(#4477a1),to(#81a8cb));
+	background:-moz-linear-gradient(-90deg,#4477a1,#81a8cb);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4477a1',endColorstr='#81a8cb');
+}
+
+.submit_btn:active{
+	background:#4477a1;
+}
+
+.txt-keywords{
+	width:95%;
+	height:20px;
+	padding-left:5%;
+	box-shadow:0 0 7px #3498db;
+	border:1px solid #3498db;
+	border-radius:100px;
+}
+
+.txt-keywords:focus{
+	border:1px solid #ff9900;
+	color:#011892;
+	outline:0;
+}
+
+#contents{
+    padding-top:70px;
+    margin-top:50px;
+    margin:0 auto;
+	width:100%;
+	height:auto;
+	padding-bottom:10px;
+	margin-bottom:100px;
+	overflow:auto;/* コンテンツの表示を自動に設定(スクロール)*/
+}
+
+.contents-btn-set{
+	margin:3%;
+	display:inline-block;
+	float:left;
+}
+
+h1{
+	width:90%;
+	color:#364e96;/* 文字色*/
+	margin-left:3%;
+	margin-right:3%;
+	padding:0.5em 0;/* 上下の余白*/
+	border-top:solid 3px #364e96;/* 上線*/
+	border-bottom:solid 3px #364e96;/* 下線*/
+}
+
+h2{
+	width:90%;
+	color:#5e5e5e;/* 文字色*/
+	margin-left:3%;
+	margin-right:3%;
+	padding:0.5em 0;/* 上下の余白*/
+}
+
+.pager{
+	padding-top:50px;
+	text-align:center;
+	font-size:18px;
+	clear:both;
+}
+
+.2column-container{
+	width:90%;
+}
+
+.box{
+	width:90%;
+	display:block;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:3%;
+	float:left;
+}
+
+.right{
+	float:left;
+	width:400px;
+	height:325px;
+	margin-bottom:40px;
+}
+
+.left{
+	float:left;
+	width:500px;
+	height:325px;
+	margin-bottom:40px;
+}
+
+table.horizontal-list-table,th,td{
+	margin:3%;
+	width:90%;
+	border-collapse:collapse;
+	border:1px solid #ccc;
+	line-height:1.5;
+}
+
+table.horizontal-list-table th{
+	width:150px;
+	padding:10px;
+	font-weight:bold;
+	font-size:0.8em;
+	text-align:center;
+	vertical-align:top;
+	background:#005392;
+	color:#ffffff;
+}
+
+table.horizontal-list-table td{
+	width:350px;
+	padding:10px;
+	font-size:0.8em;
+	text-align:center;
+	vertical-align:top;
+}
+
+table.vertical-list-table{
+	width:90%;
+	border-collapse:separate;
+	border-spacing:0;
+	text-align:left;
+	font-size:1.4rem;
+	line-height:1.5;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+}
+
+table.vertical-list-table th{
+	width:25%;
+	padding:10px;
+	font-weight:400;
+	vertical-align:top;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	background:#005392;
+	color:#ffffff;
+}
+
+table.vertical-list-table td{
+	width:75%;
+	padding:10px;
+	vertical-align:top;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+table.vertical-list-table,th,td{
+	margin:3%;
+	border-collapse:collapse;
+	border:1px solid #ccc;
+	line-height:1.5;
+}
+
+table.vertical-list-table-mini{
+	width:100%;
+	border-collapse:separate;
+	border-spacing:0;
+	text-align:left;
+	font-size:1.0rem;
+	line-height:1.5;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+}
+
+table.vertical-list-table-mini th{
+	width:35%;
+	padding:10px;
+	font-weight:400;
+	vertical-align:middle;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	background:#005392;
+	color:#ffffff;
+	}
+
+	table.vertical-list-table-mini td{
+	width:65%;
+	padding:10px;
+	vertical-align:middle;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	}
+
+/* 商品一覧エリアの背景*/
+#product-list{
+	background:#cccccc;
+}
+
+/* クリアフィックス*/
+#item-list ul::after{
+	content:"";
+	clear:both;
+	display:block;
+}
+
+/* 商品一覧リストの設定*/
+#product-list ul li{
+	display:block;
+	float:left;
+	width:85%;
+	height:100%;
+	list-style-type:none;
+/*	background:#00cccc;  */
+    text-align:center;
+}
+
+#footer{
+	position:fixed;
+	text-align:center;
+	bottom:0;
+	clear:both;
+	left:0;
+	z-index:10;
+	width:100%;
+	padding:10px;
+	color:#ffffff;
+	background-color:#005392;
+}
+
+.product-list-box{
+	display:inline-block;
+	float:left;
+	width:33.3%;
+	height:300px;
+	text-align:center;
+}
+
+.cart-list-box{
+	overflow:hidden;
+	float:left;
+	width:1020px;
+}
+
+.cart-list-box li{
+	float:left;
+	width:235px;
+	list-style:none;
+}
+
+.product-details-recomｍend-box{
+	margin-top:2%;
+	clear:both;
+	margin-left:200px;
+}
+
+.recommend-box{
+	float:left;
+	width:33.3%;
+	height:148px;
+}
+
+.txt{
+	width:99%;
+	height:30px;
+	border:0.5px solid #999;
+	font-size:24px;
+	}
+
+.txt:focus{
+	border:1px solid #ff9900;
+	outline:0;
+}
+
+.check{
+	display:none;
+}
+
+.check-parts{
+	padding-left:20px;
+	position:relative;
+	margin-right:20px;
+}
+
+.check-parts::before{
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:15px;
+    height:15px;
+    border:1px solid #999;
+    border-radius:4px;
+}
+
+.check:checked +.check-parts{
+	color:#009a9a;
+}
+
+.check:checked + .check-parts::after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-5px;
+	left:5px;
+	width:7px;
+	height:14px;
+	transform:rotate(40deg);
+	border-bottom:3px solid #009a9a;
+	border-right:3px solid #009a9a;
+}
+
+.cs-div{
+	height:25px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	overflow:hidden;
+	background:#fafafa url("../images/select.png")no-repeat;
+	width:95%;
+}
+
+.cs-div select{
+	margin:0;
+	padding:5px 8px;
+	height:25px;
+	width:95%;
+	border:none;
+	box-shadow:none;
+	background:transparent;
+	background-image:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+	appearance:none;
+}
+
+.cs-div select:focus{
+	outline:none;
+}
+
+.item-image-box-50{
+	width:50px;
+	height:50px;
+}
+
+.item-image-box-100{
+	width:100px;
+	height:100px;
+}
+
+.item-image-box-200{
+	width:200px;
+	height:200px;
+}
+
+.item-image-box-300{
+	width:300px;
+	height:300px;
+}
+
+.item-image-box-320{
+	width:320px;
+	height:320px;
+}
+
+.item-image-box-400{
+	width:400px;
+	height:400px;
+}
+
+.create-user-form{
+	white-space:normal;
+}
+
+.info,.success,.warning,.error,.validation{
+	border:1px solid;
+	margin:10px 0px;
+	padding:15px 10px 15px 50px;
+	background-repeat:no-repeat;
+	background-position:10px center;
+}
+
+.info{
+	font-size:0.8em;
+	margin-left:3%;
+	width:84%;
+	color:#00529B;
+	background-color:#BDE5F8;
+}
+
+.success{
+	font-size:0.8em;
+	margin-left:3%;
+	width:84%;
+	color:#4F8A10;
+	background-color:#DFF2BF;
+}
+
+.warning{
+	font-size:0.8em;
+	margin-left:3%;
+	width:84%;
+	color:#9F6000;
+	background-color:#FEEFB3;
+}
+
+.error{
+	font-size:0.8em;
+	margin-left:3%;
+	width:84%;
+	color:#D8000C;
+	background-color:#FFBABA;
+}
+
+.error-message{
+	color:red;
+}
